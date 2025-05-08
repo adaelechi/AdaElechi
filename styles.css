@@ -230,7 +230,7 @@ main {
     left: 0;
     content: '';
     background-color: #1a1a1a;
-    background-image: url(/paul-volkmer-night-sky.jpg);
+    background-image: url(paul-volkmer-night-sky.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
