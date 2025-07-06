@@ -1,24 +1,24 @@
-function setupStickyNav() {
-    const navbar = document.querySelector('.navbar');
-    const stickyOffset = navbar.offsetTop;
-    const menuItem = document.querySelectorAll('navbar__item');
+// function setupStickyNav() {
+//     const navbar = document.querySelector('.navbar');
+//     const stickyOffset = navbar.offsetTop;
+//     const menuItem = document.querySelectorAll('navbar__item');
   
-    function toggleStickyNav() {
-      if (window.scrollY >= stickyOffset) {
-        navbar.classList.add('sticky');
-        menuItem.classList.add('stickycolor');
-        // menuItem.classList.add('sticky-color');
-      } else {
-        navbar.classList.remove('sticky');
-        menuItem.classList.remove('sticky-color');
-      }
-    }
+//     function toggleStickyNav() {
+//       if (window.scrollY >= stickyOffset) {
+//         navbar.classList.add('sticky');
+//         menuItem.classList.add('stickycolor');
+//         // menuItem.classList.add('sticky-color');
+//       } else {
+//         navbar.classList.remove('sticky');
+//         menuItem.classList.remove('sticky-color');
+//       }
+//     }
   
-    window.addEventListener('scroll', toggleStickyNav);
-    // console.log('sticky nav is set up!');
-}
+//     window.addEventListener('scroll', toggleStickyNav);
+//     // console.log('sticky nav is set up!');
+// }
 
-document.addEventListener('DOMContentLoaded', setupStickyNav);
+// document.addEventListener('DOMContentLoaded', setupStickyNav);
 
 function setupTypingEffect() {
   const textElement = document.querySelector('.hero-text');
@@ -63,3 +63,44 @@ function setupTypingEffect() {
 }
 
 document.addEventListener('DOMContentLoaded', setupTypingEffect);
+
+
+const hamburger = document.querySelector('.hamburger');
+const sideBar = document.querySelector('.navbar_menu');
+
+
+
+hamburger.addEventListener('click', function() {
+  if (sideBar.classList.contains('close-sidebar')) {
+      // Open the sidebar
+      // sideBar.classList.remove('close-sidebar');
+      sideBar.classList.add('open-sidebar');
+      
+      // Change to X icon
+      hamburger.classList.remove('bar');
+      hamburger.classList.add('close');
+  } else {
+      // Close the sidebar
+      sideBar.classList.remove('open-sidebar');
+      // sideBar.classList.add('close-sidebar');
+
+      
+      // Change to hamburger icon
+      hamburger.classList.remove('close');
+      hamburger.classList.add('bar');
+  }
+});
+
+function exitHover() {
+  const projectCardsImg = document.querySelectorAll('.sect3_cards-content');
+  const projectCardsImgHover = document.querySelectorAll('.sect3_cards-content:hover');
+
+  projectCardsImgHover.forEach(element => {
+    element.addEventListener('mouseout', function() {
+      element.style.transform = 'scale(1)';
+      element.style.transition = 'all ease 1s';
+    });
+  });
+}
+
+exitHover();
