@@ -5,7 +5,7 @@
 - 👩🏾‍💻 I am currently working on completing my portfolio.
 - ☘️ I am currently improving my skills in JavaScript.
 - 🎗️ Fun fact: I am a self-taught developer with no previous tech knowledge!
-- ☎️ How to reach me: WhatsApp/Telegram: +234 802 355 5346; Email: otielechiesther@gmail.com
+- ☎️ How to reach me: Email: otielechiesther@gmail.com
 
 <!--
 **adaelechi/ADAELECHI** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
